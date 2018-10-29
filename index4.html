@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Test angular JS</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="js/ex4.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ex4.css">
+    
+</head>
+<body ng-controller="monControleur">
+    <h1 id="monTitre">Séries en série</h1>
+    <div class="row" id="mesSeries" ng-repeat="serie in tabSerie">
+        <div class="offset5 span2">
+            <img ng-src="{{serie.urlImage}}"/>
+        </div>
+        
+        <div class="span5">
+            <h2>{{serie.titre}}</h2>
+            <p>Titre original : {{serie.titreOr}}</p>
+            <p>Créateur: {{serie.createur}}</p>
+            <p>Etat: {{serie.etat}}</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

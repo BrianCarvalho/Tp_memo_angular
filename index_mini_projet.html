@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test angular JS</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="js/ex4_mini_projet.js"></script>
+    
+</head>
+<body ng-app="App" ng-controller="monControl">
+    <div ng-repeat="infoPerso in infoPersos">
+        <h1>Fiche d'identité n°{{infoPerso.id}}</h1>
+        <p>Nom: {{infoPerso.nom}}</p>
+        <p>Prenom: {{infoPerso.prenom}}</p>
+        <p>Date de naissance: {{infoPerso.dateNaissance}}</p>
+    </div>
+
+    <div ng-repeat="fruit in fruits ">
+        <p>{{fruit.id}}</p>
+        <p>{{fruit.nom}}</p>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    background-color:grey;
+}
+
+#monTitre{
+    text-align: center;
+    margin: 30px;
+    font-size: 60px;
+
+}
+
+#mesSeries{
+    margin-bottom: 20px;
+}
