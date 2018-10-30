@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Test angular JS</title>
     <script src="lib/angular.min.js"></script>
-    <script src="js/ex5.js"></script>
+    <script src="js/ex6.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
     
 </head>
 <body ng-controller="monControl">
-    <button ng-click="affichage()">Afficher la liste</button>
-    <ul>
+    <button ng-click="affichage()">Cliquez ici</button>
+    <ul ng-show="visible">
         <li ng-repeat="fruit in mesFruits">{{fruit}}</li>
     </ul>
   

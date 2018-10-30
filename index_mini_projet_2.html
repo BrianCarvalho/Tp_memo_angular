@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Test angular JS</title>
+    <script src="lib/angular.min.js"></script>
+    <script src="js/index_mini_projet_2.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    
+</head>
+<body ng-controller="monControl">
+        <h1>Liste des eleves</h1>
+        <form>
+            <p>nom: <input type="text" ng-model="eleve"/></p>
+            <p>prenom: <input type="text" ng-model="eleve1"/></p>
+            <p>date de Naissance: <input type="text" ng-model="eleve2"/></p>
+            <p>Classe: <select name="class" ng-model="eleve3">
+                <option value="2nd">2nd</option>
+                <option value="ter">terminal</option>
+                <option value="1ere">premiere</option>
+            </select>
+
+            <button ng-click="ajout()">Valider</button>
+        </form>
+        
+        <div ng-repeat="eleve in mesEleves">{{eleve}}>
+            
+        </div>
+        
+    
